@@ -53,10 +53,20 @@ The target plugin built on top of these stubs will:
 
 ## Files in this repo
 
+### Server-side (decompiled C#)
+
 | File | Class | Description |
 |------|-------|-------------|
-| `ChangelogPanel.cs` | `ChangelogPanel` | MonoBehaviour holding refs to the three changelog section headers and their `RustText` content fields + layout `RectTransform`s |
-| `ChangelogButton.cs` | `ChangelogButton` | MonoBehaviour that shows/hides the HUD button based on `BaseGameMode.GetActiveGameMode()` and sets the label to the mode's `shortname` |
+| `ChangelogPanel.cs` | `ChangelogPanel` | MonoBehaviour — refs to the three changelog section headers and `RustText` content fields + layout `RectTransform`s |
+| `ChangelogButton.cs` | `ChangelogButton` | MonoBehaviour — shows/hides the HUD button based on `BaseGameMode.GetActiveGameMode()` and sets the label to the mode's `shortname` |
+
+### Client-side (Unity prefab data)
+
+| File | Prefab | Description |
+|------|--------|-------------|
+| `client/Changelog.Toggle.md` | `Changelog.Toggle` | HUD button prefab — size (80×20 px), anchors, colors, event wiring, GameModeUIElement tags, **hold-to-show** behaviour |
+| `client/ChangelogPanel.md` | `ChangelogPanel` | Panel prefab — size (380×322 px), layout, RustText font/color, localization token system, section structure |
+| `assets/changelog_ingame.png` | — | In-game screenshot of the panel on a Hardcore server |
 
 ---
 
