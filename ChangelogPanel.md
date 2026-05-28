@@ -7,7 +7,7 @@ PathID: **250076** (MonoBehaviour), **18726** (GameObject).
 
 ## In-game appearance
 
-![ChangelogPanel in-game — Hardcore server](../assets/changelog_ingame.png)
+![ChangelogPanel in-game — Hardcore server](https://github.com/ErikGrischuk/ChangelogPanelRust/blob/main/image.png)
 
 - Appears in the **top-left** of the screen, directly below the toggle button
 - Dark semi-transparent background
